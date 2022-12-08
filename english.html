@@ -164,24 +164,10 @@
     <div class="interests container">
 
       <div class="section-title">
-        <h2>Python libraries</h2>
+        <h2>Python libraries / frameworks</h2>
       </div>
 
       <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <!-- <iconify-icon icon="logos:qt" width="30" height="30"></iconify-icon><pre>  </pre> -->
-            <iconify-icon icon="simple-icons:qt" width="30" height="30" class="lib-icons"></iconify-icon><pre>  </pre>
-            <h3>PySide / PyQT</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <iconify-icon icon="game-icons:feather" width="30" height="30"></iconify-icon><pre>  </pre>
-            <h3>Tkinter</h3>
-          </div>
-        </div>
 
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
@@ -196,6 +182,21 @@
             <iconify-icon icon="bxl:flask" width="30" height="30"></iconify-icon><pre>  </pre>
             <h3>Flask</h3>
           </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <!-- <iconify-icon icon="logos:qt" width="30" height="30"></iconify-icon><pre>  </pre> -->
+            <iconify-icon icon="simple-icons:qt" width="30" height="30" class="lib-icons"></iconify-icon><pre>  </pre>
+            <h3>PySide / PyQT</h3>
+          </div>  
+        </div>  
+
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <iconify-icon icon="game-icons:feather" width="30" height="30"></iconify-icon><pre>  </pre>
+            <h3>Tkinter</h3>
+          </div>    
         </div>
 
         <div class="col-lg-3 col-md-4 mt-4">
@@ -480,9 +481,10 @@
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-web">Web</li>
-            <!-- <li data-filter=".filter-card">Card</li> -->
+            <li data-filter=".filter-produ">In production <i class="bi bi-circle-fill" style="color:green"></i></li>
+            <li data-filter=".filter-devel">In development <i class="bi bi-circle-fill" style="color:blue"></i></li>
+            <li data-filter=".filter-pause">Paused <i class="bi bi-circle-fill" style="color:grey"></i></li>
+            <!-- <li data-filter=".filter-cance">Canceled <i class="bi bi-circle-fill" style="color:red"></i></li> -->
           </ul>
         </div>
       </div>
@@ -490,7 +492,7 @@
       <div class="row portfolio-container">
 
         <!-- MORELLA v1 -->
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-produ">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/morella.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -505,7 +507,7 @@
         </div>
 
         <!-- MORELLA v2 -->
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-pause">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/morella-v2.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -520,7 +522,7 @@
         </div>
 
         <!-- WEBSITE MANUEL FERRERO -->
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-produ">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/web-mf.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -535,7 +537,7 @@
         </div>
 
         <!-- ECOMMERCE DJANGO PROJECT (EDU) -->
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-devel">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/ecommerce-project.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
