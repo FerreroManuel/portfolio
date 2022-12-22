@@ -1073,7 +1073,7 @@ section .container {
   display: none;
   background: rgba(255, 255, 255, 0.08);
   background: #ed3c0d;
-  text-align: left;
+  text-align: center;
   padding: 15px;
   font-weight: 600;
 }
@@ -1085,7 +1085,7 @@ section .container {
 .contact .php-email-form .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #1878d2;
+  background: green;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1147,6 +1147,33 @@ section .container {
   padding: 12px 15px;
 }
 
+.new-select {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.08);
+  background-clip: padding-box;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.new-select:focus {
+  outline: none;
+}
+
+.opt {
+  background-color: rgba(34, 34, 34, 1);
+  color: #fff;
+}
+
 .contact .php-email-form button[type=submit] {
   background: #1878d2;
   border: 0;
@@ -1154,6 +1181,7 @@ section .container {
   color: #fff;
   transition: 0.4s;
   border-radius: 4px;
+  width: 100%;
 }
 
 .contact .php-email-form button[type=submit]:hover {

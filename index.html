@@ -26,7 +26,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -614,29 +613,54 @@
         </div>
       </div>
 
-      <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
+      <!-- Contact Form -->
+      
+      <form action="forms/phpmailer.php" method="POST" role="form" class="php-email-form mt-4">
+        <div class="mb-4">
+          <span class="h5">FORMULARIO DE CONTACTO</span>
+          <span class="text-muted small fst-italic">(todos los campos son obligatorios)</span>
         </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form> -->
 
+        <div class="row">
+          
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre y apellido" required>
+          </div>
+
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Su email" required>
+          </div>
+
+        </div>
+
+        <div class="form-group mt-3">
+
+          <select class="new-select" name="subject" id="subject" onchange="color(this.value); other(this.value)" required>
+            <option class="opt" hidden selected disabled value="">Seleccione un asunto</option>
+            <option class="opt" value="Oferta de empleo">Oferta de empleo</option>
+            <option class="opt" value="Consulta general">Consulta general</option>
+            <option class="opt" value="Otro">Otro</option>
+          </select>
+
+        </div>
+
+        <div class="form-group mt-3" id="other-subject-div">
+          <input type="text" class="form-control" name="other-subject" id="other-subject" placeholder="Epecifique asunto" required>
+        </div>
+
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+        </div>
+
+        <div class="my-3">
+          <div class="loading">Cargando...</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Su mensaje ha sido envíado con éxito. Gracias por contactarse!</div>
+        </div>
+
+        <div class="text-center"><button type="submit" name="submit"><b>Enviar</b></button></div>
+      </form>
+      
     </div>
   </section><!-- End Contact Section -->
 
@@ -661,6 +685,31 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- AJAX -->
+  <script>
+    $('#other-subject-div').hide();
+    $('#other-subject').prop('required', false);
+
+    function color(val){
+      if (val != "") {
+      document.getElementById("subject").style.color = "#fff";
+      }
+    }
+
+    function other(val){
+      if (val != "Otro") {
+        $('#other-subject-div').hide();
+        $('#other-subject').prop('required', false);
+      } else {
+        $('#other-subject-div').show();
+        $('#other-subject').prop('required', true);
+      }
+    }
+  </script>
 
 </body>
 

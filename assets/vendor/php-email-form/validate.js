@@ -67,6 +67,9 @@
       if (data.trim() == 'OK') {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
+        document.getElementById("subject").style.color = 'rgba(255, 255, 255, 0.3)';
+        $('#other-subject-div').hide();
+        $('#other-subject').prop('required', false);
       } else {
         throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
       }
