@@ -3,7 +3,7 @@
 
 In order to spread my work and look for a job related to programming, I decided to make a website where I could expose information about myself, my studies and my work experience, my portfolio and my contact information.
 
-It is completely responsive and was made using, as a base, a template downloaded from BootstrapMade, to which personal modifications and additions were made.
+It is completely responsive and was made using, as a base, a template downloaded from <a href="https://bootstrapmade.com/" target="_blank" title="External link to BootstrapMade">BootstrapMade</a>, to which personal modifications and additions were made.
 
 In it we can find the following sections:
 
@@ -63,7 +63,7 @@ In the case of errors 500 and 503, since the user is unable to access the site a
 ## Mi sitio web personal de portfolio
 Con motivo de difundir mi trabajo y buscar empleo relacionado con la programación, decidí realizar un sitio web en donde pudiera exponer información sobre mí, sobre mis estudios y mis experiencias laborales, mi portfolio y mis datos de contacto.
 
-El mismo es completamente responsive y se realizó utilizando, como base, un template descargado de [BootstrapMade](https://bootstrapmade.com/), al cual se le hicieron modificaciones y agregados personales.
+El mismo es completamente responsive y se realizó utilizando, como base, un template descargado de <a href="https://bootstrapmade.com/" target="_blank" title="Enlace externo a BootstrapMade">BootstrapMade</a>, al cual se le hicieron modificaciones y agregados personales.
 
 En él podemos encontrar las siguientes secciones:
 
